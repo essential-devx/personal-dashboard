@@ -104,7 +104,7 @@
         { name: "17:00 - MMA Kids",     gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
         { name: "18:00 - Grappling",    gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
         { name: "19:00 - Boxeo",        gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
-        { name: "20:00 - MMA Avanzado", gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado (Sparring)", gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
 
         // Jueves (Thursday)
         { name: "11:30 - Grappling",         gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
@@ -115,9 +115,9 @@
         { name: "20:00 - MMA Avanzado",      gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
 
         // Viernes (Friday)
-        { name: "11:30 - Grappling",                   gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
-        { name: "12:30 - Boxeo",                       gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
-        { name: "18:00 - Grappling / MMA Princ.",      gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "11:30 - Grappling (Sparring)",        gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Boxeo (Sparring)",            gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - Grappling / MMA Princ. (Sparring)", gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
         { name: "19:00 - Boxeo",                       gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
         { name: "20:00 - MMA Avanzado",                gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true }
       ]
@@ -2894,7 +2894,7 @@
               parsed.splitRotation = null;
               parsed.exercises = null;
             }
-            if (parsed.exercises && parsed.exercises.some(e => e.name === 'Shadow Boxing')) {
+            if (parsed.exercises && parsed.exercises.some(e => e.name === 'Shadow Boxing' || e.name === '11:30 - Grappling')) {
               parsed.exercises = null;
             }
             return normalize(parsed);
