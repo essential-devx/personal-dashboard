@@ -82,20 +82,44 @@
       // First-run defaults. Once a user logs anything, they edit through
       // the in-app + / gear buttons; this block stays as the seed.
       defaultExercises: [
-        { name: "Shadow Boxing",       gym: "mma", day: "monday",    repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Heavy Bag Work",      gym: "mma", day: "monday",    repMin: 5, repMax: 8, step: 1, startWeight: 0, bw: true },
-        { name: "Pad Work",            gym: "mma", day: "monday",    repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Wrestling Drills",    gym: "mma", day: "tuesday",   repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Takedowns",           gym: "mma", day: "tuesday",   repMin: 5, repMax: 8, step: 1, startWeight: 0, bw: true },
-        { name: "BJJ Rolling",         gym: "mma", day: "tuesday",   repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Thai Pads",           gym: "mma", day: "wednesday", repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Kick Drills",         gym: "mma", day: "wednesday", repMin: 5, repMax: 8, step: 1, startWeight: 0, bw: true },
-        { name: "Light Sparring",      gym: "mma", day: "wednesday", repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Judo Throws",         gym: "mma", day: "thursday",  repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Submission Drills",   gym: "mma", day: "thursday",  repMin: 5, repMax: 8, step: 1, startWeight: 0, bw: true },
-        { name: "Positional Sparring", gym: "mma", day: "thursday",  repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "MMA Sparring",        gym: "mma", day: "friday",    repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true },
-        { name: "Conditioning Circuit",gym: "mma", day: "friday",    repMin: 3, repMax: 5, step: 1, startWeight: 0, bw: true }
+        // Lunes (Monday)
+        { name: "11:30 - MMA",          gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Boxeo",        gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "17:00 - MMA Kids",     gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - Grappling",    gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "19:00 - Boxeo",        gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado", gym: "mma", day: "monday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+
+        // Martes (Tuesday)
+        { name: "11:30 - Wrestling",         gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Kick Boxing",       gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "17:00 - MMA Kids",          gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - MMA Principiantes", gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "19:00 - Kick Boxing",       gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado",      gym: "mma", day: "tuesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+
+        // Miércoles (Wednesday)
+        { name: "11:30 - MMA",          gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Boxeo",        gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "17:00 - MMA Kids",     gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - Grappling",    gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "19:00 - Boxeo",        gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado", gym: "mma", day: "wednesday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+
+        // Jueves (Thursday)
+        { name: "11:30 - Grappling",         gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Kick Boxing",       gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "17:00 - MMA Kids",          gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - MMA Principiantes", gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "19:00 - Kick Boxing",       gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado",      gym: "mma", day: "thursday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+
+        // Viernes (Friday)
+        { name: "11:30 - Grappling",                   gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "12:30 - Boxeo",                       gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "18:00 - Grappling / MMA Princ.",      gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "19:00 - Boxeo",                       gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true },
+        { name: "20:00 - MMA Avanzado",                gym: "mma", day: "friday", repMin: 1, repMax: 1, step: 1, startWeight: 0, bw: true }
       ]
     };
   </script>
@@ -2868,6 +2892,9 @@
               parsed.gyms = null;
               parsed.days = null;
               parsed.splitRotation = null;
+              parsed.exercises = null;
+            }
+            if (parsed.exercises && parsed.exercises.some(e => e.name === 'Shadow Boxing')) {
               parsed.exercises = null;
             }
             return normalize(parsed);
