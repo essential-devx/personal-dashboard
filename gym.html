@@ -2862,7 +2862,16 @@
       function loadState() {
         try {
           const raw = localStorage.getItem(LS_KEY);
-          if (raw) return normalize(JSON.parse(raw));
+          if (raw) {
+            let parsed = JSON.parse(raw);
+            if (parsed.gyms && parsed.gyms.some(g => g.id === 'comm')) {
+              parsed.gyms = null;
+              parsed.days = null;
+              parsed.splitRotation = null;
+              parsed.exercises = null;
+            }
+            return normalize(parsed);
+          }
         } catch (e) { }
         return normalize({});
       }
